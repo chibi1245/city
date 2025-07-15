@@ -1,0 +1,64 @@
+name: grs
+description: Grievance Redress System - Stripped Version
+
+publish_to: 'none'
+
+version: 1.0.3+4
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_svg: ^2.0.9
+  lottie: ^2.7.0
+  cached_network_image: ^3.3.0
+  # Removed: flutter_typeahead, month_picker_dialog, url_launcher, pin_code_fields
+  # as they are tied to specific business logic features.
+
+  path: ^1.8.3
+  get_storage: ^2.1.1
+  # THIS IS THE CRUCIAL CHANGE TO FIX THE CONFLICT:
+  intl: ^0.20.2 # Updated to satisfy easy_localization's requirement
+  fluttertoast: ^8.2.4
+  easy_localization: ^3.0.3
+  # Removed image and file handling packages as they're not needed
+  # for a business logic-stripped app.
+
+  # Removed: http, get_it, provider, flutter_tts, fl_chart
+  # as they are the primary tools for the business logic and services.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  import_sorter: ^4.6.0
+  flutter_lints: ^3.0.1
+
+import_sorter:
+  emojis: true
+  comments: false
+  ignored_files:
+    - \/test\/*
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/animations/
+    - assets/filled_icons/
+    - assets/flags/
+    - assets/fonts/
+    - assets/icons/
+    - assets/languages/
+    - assets/logo/
+    - assets/outline_icons/
+    - assets/png_images/
+    - assets/svg_images/
+
+  fonts:
+    - family: poppins
+      fonts:
+        - asset: assets/fonts/poppins-regular.ttf

@@ -1,0 +1,11 @@
+keyAlias: key
+Key Password: grs_cabinet_2023
+Store Password: grs_cabinet_2023
+First name & Last name: Cabinet Division
+Organization unit: ICT Cell
+Organization name: Cabinet Division
+City: Dhaka
+State: Bangladesh
+Country Code: BD
+SHA1: 8F:CC:6A:14:93:35:43:08:0C:87:50:EA:B5:38:71:C2:B1:81:7A:C6
+SHA256: 52:61:64:3D:B4:69:37:7F:C0:4A:C6:15:11:06:EA:93:D9:C0:F9:7C:CF:2C:B4:C6:F6:50:37:C5:2F:BA:34:AC
